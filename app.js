@@ -1,5 +1,6 @@
 // queryselectors
-
+const hamburger = document.querySelector(".hamburger");
+const navbar = document.querySelector("nav");
 
 // constants
 
@@ -8,6 +9,9 @@
 
 
 //functions
-
+const slideRight = () => {
+    navbar.classList.toggle("visible");
+};
 
 //eventlisteners
+hamburger.addEventListener("click", slideRight);
