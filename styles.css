@@ -55,6 +55,8 @@ header {
   height: 3px;
   margin-top: 3px;
   background-color: var(--primaryColor);
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .line-1{
@@ -85,6 +87,18 @@ nav {
 
 .visible{
   left: 0;
+}
+
+.animation-hamburger .line-1{
+  transform: rotate(-45deg) translate(-5px, 3.5px);
+}
+
+.animation-hamburger .line-2{
+  opacity: 0;
+}
+
+.animation-hamburger .line-3{
+  transform: rotate(45deg) translate(-5px, -3.5px);
 }
 
 @media screen and (min-width: 768px){
